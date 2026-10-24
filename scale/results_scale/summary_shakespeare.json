@@ -1,0 +1,169 @@
+{
+ "table": {
+  "albert": {
+   "val_mean": 1.7731997668743134,
+   "val_std": 0.010528247014189428,
+   "n": 5,
+   "dist_intercouches": 0.0,
+   "eff_rank_moyen": 39.18337395859713,
+   "ff1_params": 16384
+  },
+  "dense": {
+   "val_mean": 1.7292458355426787,
+   "val_std": 0.011214282713202635,
+   "n": 5,
+   "dist_intercouches": 1.3966618442573338,
+   "eff_rank_moyen": 34.52149920374419,
+   "ff1_params": 98304
+  },
+  "gen": {
+   "val_mean": 1.7631539762020112,
+   "val_std": 0.015208305517615104,
+   "n": 5,
+   "dist_intercouches": 0.3854259832419259,
+   "eff_rank_moyen": 30.916465770791994,
+   "ff1_params": 31855
+  },
+  "gen_naive": {
+   "val_mean": 1.7675880134105681,
+   "val_std": 0.00843790975048453,
+   "n": 5,
+   "dist_intercouches": 0.05066210243444917,
+   "eff_rank_moyen": 39.26035539417425,
+   "ff1_params": 31855
+  },
+  "genfree": {
+   "val_mean": 1.7616639018058777,
+   "val_std": 0.013767222193255905,
+   "n": 5,
+   "dist_intercouches": 0.2771182155803273,
+   "eff_rank_moyen": 33.90230392577077,
+   "ff1_params": 31783
+  },
+  "hyp": {
+   "val_mean": 1.7683746695518494,
+   "val_std": 0.007569255453408113,
+   "n": 5,
+   "dist_intercouches": 0.2076710408461629,
+   "eff_rank_moyen": 36.79682481695478,
+   "ff1_params": 31628
+  },
+  "lora": {
+   "val_mean": 1.755369371175766,
+   "val_std": 0.012947831570629034,
+   "n": 5,
+   "dist_intercouches": 0.48065228271676,
+   "eff_rank_moyen": 31.273155872686754,
+   "ff1_params": 31744
+  }
+ },
+ "paired": {
+  "gen_vs_lora": {
+   "delta_moyen": 0.007784605026245117,
+   "t": 1.7257173869107882,
+   "p": 0.1594795054925766,
+   "n": 5,
+   "tost": {
+    "delta": 0.007784605026245117,
+    "ci90": [
+     -0.001832024749810087,
+     0.01740123480230032
+    ],
+    "equivalent": false,
+    "n": 5
+   }
+  },
+  "gen_vs_hyp": {
+   "delta_moyen": -0.005220693349838257,
+   "t": -0.9336043079844529,
+   "p": 0.403360384391114,
+   "n": 5,
+   "tost": {
+    "delta": -0.005220693349838257,
+    "ci90": [
+     -0.017141930478956798,
+     0.006700543779280285
+    ],
+    "equivalent": false,
+    "n": 5
+   }
+  },
+  "gen_vs_albert": {
+   "delta_moyen": -0.010045790672302246,
+   "t": -2.5800351532897756,
+   "p": 0.06132515378005443,
+   "n": 5,
+   "tost": {
+    "delta": -0.010045790672302246,
+    "ci90": [
+     -0.018346486317301403,
+     -0.0017450950273030907
+    ],
+    "equivalent": false,
+    "n": 5
+   }
+  },
+  "gen_vs_dense": {
+   "delta_moyen": 0.03390814065933227,
+   "t": 5.759476081555882,
+   "p": 0.004508320404256293,
+   "n": 5,
+   "tost": {
+    "delta": 0.03390814065933227,
+    "ci90": [
+     0.0213571794831241,
+     0.046459101835540445
+    ],
+    "equivalent": false,
+    "n": 5
+   }
+  },
+  "gen_vs_genfree": {
+   "delta_moyen": 0.0014900743961334228,
+   "t": 0.21199596820078997,
+   "p": 0.8424743552799752,
+   "n": 5,
+   "tost": {
+    "delta": 0.0014900743961334228,
+    "ci90": [
+     -0.013494221483380068,
+     0.016474370275646914
+    ],
+    "equivalent": false,
+    "n": 5
+   }
+  },
+  "gen_vs_gen_naive": {
+   "delta_moyen": -0.004434037208557129,
+   "t": -0.695369746555027,
+   "p": 0.5251062158735855,
+   "n": 5,
+   "tost": {
+    "delta": -0.004434037208557129,
+    "ci90": [
+     -0.018027795091101147,
+     0.00915972067398689
+    ],
+    "equivalent": false,
+    "n": 5
+   }
+  }
+ },
+ "verdict": {
+  "n_seeds_min": 5,
+  "discrimine": true,
+  "equiv_lora": false,
+  "equiv_hyp": false,
+  "beats_albert": false,
+  "beats_genfree": false,
+  "q2_dist": 0.3854259832419259,
+  "lines": [
+   "0. discrimination : Δ(dense−albert) = -0.0440 (p=0.000) → tâche discriminante",
+   "Q1a. gen−lora: Δ=+0.0078, IC90=[-0.0018, +0.0174] → équivalence NON démontrée",
+   "Q1a. gen−hyp: Δ=-0.0052, IC90=[-0.0171, +0.0067] → équivalence NON démontrée",
+   "Q1b. gen−albert: Δ=-0.0100 (p=0.061) → pas de gain démontré",
+   "Q1c. gen−genfree: Δ=+0.0015 (p=0.842) → pas de gain démontré",
+   "Q2. distance inter-couches (gen) = 0.385 (> 5 % : couches différenciées) ; φ_max final moyen = 0.96"
+  ]
+ }
+}

@@ -1,0 +1,5 @@
+numpy
+matplotlib
+
+# Phase 4 uniquement (scale/jwg_scale.py)
+torch
