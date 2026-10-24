@@ -1,0 +1,134 @@
+{
+ "E1a": {
+  "V1": {
+   "perte_finale_mediane": 6.931703839174568e-14,
+   "pas_median": 242.5,
+   "std_inter_graines_median": 2.7016041681731004e-13,
+   "perte_max_run": 0.22963366656081557,
+   "taux_convergence_1e-10": 0.8833333333333333
+  },
+  "V2": {
+   "perte_finale_mediane": 5.059755147610854e-14,
+   "pas_median": 256.5,
+   "std_inter_graines_median": 3.0841535312218707e-14,
+   "perte_max_run": 0.22964069295071343,
+   "taux_convergence_1e-10": 0.8666666666666667
+  },
+  "V3": {
+   "perte_finale_mediane": 6.775084835281714e-14,
+   "pas_median": 250.0,
+   "std_inter_graines_median": 2.3732352718596666e-14,
+   "perte_max_run": 0.18396912803137616,
+   "taux_convergence_1e-10": 0.9333333333333333
+  },
+  "lora": {
+   "perte_finale_mediane": 6.03911394654213e-14,
+   "pas_median": 244.5,
+   "std_inter_graines_median": 2.6790589775906007e-14,
+   "perte_max_run": 9.918837341396772e-14,
+   "taux_convergence_1e-10": 1.0
+  },
+  "libre": {
+   "perte_finale_mediane": 0.0,
+   "pas_median": 0.0,
+   "std_inter_graines_median": 0.0,
+   "perte_max_run": 0.0,
+   "taux_convergence_1e-10": 1.0
+  }
+ },
+ "E1a_bruit": {
+  "V1": {
+   "perte_finale_mediane": 9.799720399229367e-05,
+   "pas_median": 2500.0,
+   "std_inter_graines_median": 1.885357036732711e-15,
+   "perte_max_run": 0.22971700614169724,
+   "taux_convergence_1e-10": 0.0
+  },
+  "V2": {
+   "perte_finale_mediane": 0.00010065131925785778,
+   "pas_median": 2500.0,
+   "std_inter_graines_median": 7.782343217153082e-07,
+   "perte_max_run": 0.22972402364488798,
+   "taux_convergence_1e-10": 0.0
+  },
+  "V3": {
+   "perte_finale_mediane": 3.670400058372771e-05,
+   "pas_median": 2500.0,
+   "std_inter_graines_median": 4.391151958003432e-19,
+   "perte_max_run": 0.18472722943002207,
+   "taux_convergence_1e-10": 0.0
+  },
+  "lora": {
+   "perte_finale_mediane": 9.799720399229361e-05,
+   "pas_median": 2500.0,
+   "std_inter_graines_median": 4.610314044055442e-19,
+   "perte_max_run": 0.0002957486486332134,
+   "taux_convergence_1e-10": 0.0
+  },
+  "libre": {
+   "perte_finale_mediane": 0.0,
+   "pas_median": 0.0,
+   "std_inter_graines_median": 0.0,
+   "perte_max_run": 0.0,
+   "taux_convergence_1e-10": 1.0
+  }
+ },
+ "E1b": {
+  "V1": {
+   "gap_median": 1.2693996237791325,
+   "exces_median": 0.0,
+   "exces_max": 1.1102230246251565e-16
+  },
+  "V2": {
+   "gap_median": 1.2693996237791325,
+   "exces_median": 2.7755575615628914e-17,
+   "exces_max": 0.022312309523756735
+  },
+  "V3": {
+   "gap_median": 0.5575412031078852,
+   "exces_median": -0.5323299170876985,
+   "exces_max": -0.023707716983637495
+  },
+  "lora": {
+   "gap_median": 1.2693996237791325,
+   "exces_median": 0.0,
+   "exces_max": 2.220446049250313e-16
+  },
+  "libre": {
+   "gap_median": 0.0,
+   "exces_median": -1.2693996237791325,
+   "exces_max": -0.486462671389563
+  },
+  "gap_theorique_median": 1.2693996237791325
+ },
+ "hessienne_v1": {
+  "spectres": [
+   [
+    5.600060333438428e-07,
+    1.5436075251386037,
+    1.6430819507500414
+   ],
+   [
+    7.464741843652239e-07,
+    0.2390174528601753,
+    0.30811410679602547
+   ],
+   [
+    4.6304259766674007e-07,
+    1.4734325582450458,
+    1.5822626072157087
+   ],
+   [
+    3.7153246262199273e-07,
+    0.9479606968655392,
+    1.1053598087721415
+   ],
+   [
+    1.1760246498709032e-07,
+    4.079787364851734,
+    4.416881075573835
+   ]
+  ],
+  "rapport_min_max": 2.662568064996216e-08
+ }
+}
